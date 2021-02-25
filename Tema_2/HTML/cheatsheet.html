@@ -1,16 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheatsheet</title>
 </head>
+
 <body>
     <!-- Los comentarios se hacen con CTRL+SHIFT+7 -->
     <a href="https://www.google.com" target="_blank">Enlace 1</a>
+    <a href="">Enlace Sin Fin</a>
     <p>hola, prueba de esto. </p>
+    <p>Prueba</p>
+
     <a href="blog.html">Ir al Blog</a>
+    <br>
+    <a> A ningún lugar </a>
+
+    <!-- <br> Agrega espacio en blanco, 
+        <hr> agrega línea separadora-->
+    <br>
+    <hr>
+
+    <!-- Titulos <h1> el 1 se entende como título 1 -->
+    <h1>Perfil</h1>
+    <!-- Los títulos no solo cambian en tamaño sino en relevancia hasta h6
+    sin embargo los tamaños de los titulos pueden modificarse con CSS, lo que importa del número es la relevancia -->
+
+    <h2>PRUEBA</h2>
+    <h3>PRUEBA</h3>
+    <h4>PRUEBA</h4>
+    <h5>PRUEBA</h5>
+    <h6>PRUEBA</h6>
+
+    <!-- Textos / Párrafos / Paragraphs, <b> se escriben negritas, con <strong> se generan negritas con carga de 
+        información de importania -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur <b>adipisicing elit. Dolore minus praesentium</b> rerum adipisci quis sed
+        illo
+        velit corrupti officia quod, quas blanditiis doloribus, neque nobis corporis non excepturi modi mollitia aut
+        eveniet laborum! Neque sit <strong>esse explicabo velit </strong> fuga numquam voluptas?<em>Perspiciatis ipsa</em> 
+        exercitationem consequatur tenetur enim incidunt iure.
+
+        Lorem ipsum, dolor sit amet <s>consectetur adipisicing elit.</s> Ex vero quod sequi ab provident accusantium assumenda neque, eligendi nesciunt eaque?
+    </p>
+
+    <!-- La etiqueta pre nos genera un párrafo no responsive que rspetará al completo el como hayamos organizado el HTML
+    Por otra parte la etiqueta span nos permite generar una etiqueta para luego con CSS asignarle valor a estas etiquetas-->
+
+    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Omnis nam <span class="ingredients">repellat corrupti</span>ducimus! Animi odit harum consequatur placeat officia ea at dolore nemo asperiores ullam dignissimos 
+    itaque non, repellat suscipit. Quaerat, <span class="ingredients"> reiciendis quia dolor</span> at corrupti excepturi rerum quidem quas velit dolores voluptatum. 
+    itaque non, repellat suscipit. Quaerat, <span> reiciendis quia dolor at corrupti excepturi rerum quidem quas velit dolores voluptatum. 
+    Esse nihil autem fugiat ipsum</pre>
+
+<p>La Molécula preferida por casi cualquier desarrollaodr es C<sub>3</sub>H<sub>10</sub>N<sub>3</sub>
+
+<br>
+<br>
+
+El teorema de p<p>El teorema de pitágoras se conoce por la ecuación de:</p>
+<p><var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup></p>
+
+El bootcamp empieza a las <time datetime="09:30">09:30</time>
+dia fue el <time datetime="2021 02 01">El 1 de febrero de 2021.</time>
+
+</p>
+
+
+
+<br><hr><br>
+
+<!-- Contenedores/Containers-->
+<!-- se pueden hacer condiciones más grandes con frases compuestas como a*3{enlace}, el número del $ nos hará iteraciones numéricas sobre cada etiqueta, las class
+se pueden poner con un punto justo antes de la etiqueta a la que quieres que se asigne la clase por ejemplo nav>a*3.Enlace son las A's las que tendrán la clase
+Los artículos semánticos aside, article, section, header, nav, footer no tienen valor más que el de dar información sobre la organización del código. -->
+
+<nav><a href="">enlace</a><a href="">enlace</a><a href="">enlace</a></nav>
+
+<header>
+    <p><h1>Titulo</h1>
+        Contenido
+    </p>
+</header>
+<nav>
+    a*3(Enlace)
+</nav>
+
+<section>
+    <article>
+        <h1>TITULO 1</h1>
+        <P>Contenido del artículo</P>
+        <!--Las secciones representan una sección y el artículo se utiliza para definir una información específica-->
+    </article>
+</section>
+
+<aside>
+    <!-- Los Laterales de la información.-->
+    <p>Menú generalmente lateral</p>
+</aside>
+
+
+<footer>
+    <p>Pie de Página</p>
+</footer>
+
+<div class="div">Contenedr Genérico</div>
+
+<br><hr><br>
+
+<!-- Lisstas / Lists -->
+
+<ul> <!--Desordenada-->
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+</ul>
+
+<ol>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+</ol>
+
+<ol start="500">
+    <li>Elemento</li>
+    <li>Elemento</li>
+    <li>Elemento</li>
+    <li>Elemento</li>
+    <li>Elemento</li>
+</ol>
+
+<br><hr><br>
+
+<!-- Tablas/Table-->
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
     
+    <tbody> 
+        <tr>
+            <td>John</td>
+            <td>pepito@pepito.pe</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>Janen</td>
+            <td>poe@pepito.pe</td>
+            <td>45</td>
+        </tr>
+
+        <tr>
+            <td>Alumni</td>
+            <td>codespace@academy.es</td>
+            <td>99</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+<br><hr><br>
+
+<!-- Formularios / Forms -->
+
+<form action="https://www.google.com" method="get">
+    <label for="NameInput">Nombre:</label><br>
+    <input type="text" id="NameInput" placeholder="Introduce tu nombre" name="UserName"> <!--La etiqueta Value nos permite darle valor a un Input, desde el backend lo que pediremos es el value del Input-->
+
+    <div class="InputBlock">
+        <label for="LastNameInput">Apellido:</label><br>
+        <input type="text" id="LastNameInput" placeholder="Introduce tu apellido" name="UserLastName"> 
+    </div> 
+
+    <div class="InputBlock">
+        <label for="emailInput">Email:</label><br>
+        <input type="email" id="emailInput" placeholder="Introduce tu correo" name="Useremail"> 
+    </div>
+
+    <div class="InputBlock">
+        <label for="PasswordInput">Contraseña:</label><br>
+        <input type="password" id="PasswordInput" placeholder="******" name="UserPassword">
+     </div>
+
+    <div class="InputBlock">
+        <label for="MessageInput">Mensaje:</label><br>
+        <textarea cols="50" rows="10" id="MessageInput" placeholder="Deja tu mensaje" name="UserMessage"> </textarea>
+    </div>
+    <div class="InputBlock">
+        <label for="GenderInput">Género:</label><br>
+        <select  id="GenderInput"  name="UserMessage">
+            <option value="" hidden></option>
+            <option value="female">Femenino</option>
+            <option value="masculine">Masculino</option> 
+            <option value="Otro">Otro</option>
+        </div>
+        <br><br>
+
+        <input type="number", id='AgeInput' min="1" max=120> <br>
+<br>
+        
+
+        <input type="date" name="" id="">
+
+        <input type='submit' value='guardar' >
+
+</form>
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
+
 </html>
