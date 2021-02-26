@@ -194,34 +194,114 @@ Los artículos semánticos aside, article, section, header, nav, footer no tiene
     <div class="InputBlock">
         <label for="PasswordInput">Contraseña:</label><br>
         <input type="password" id="PasswordInput" placeholder="******" name="UserPassword">
-     </div>
+    </div>
 
     <div class="InputBlock">
         <label for="MessageInput">Mensaje:</label><br>
         <textarea cols="50" rows="10" id="MessageInput" placeholder="Deja tu mensaje" name="UserMessage"> </textarea>
     </div>
+
     <div class="InputBlock">
         <label for="GenderInput">Género:</label><br>
-        <select  id="GenderInput"  name="UserMessage">
+        <select  id="GenderInput"  name="UserMessage"><br>
             <option value="" hidden></option>
             <option value="female">Femenino</option>
             <option value="masculine">Masculino</option> 
             <option value="Otro">Otro</option>
-        </div>
-        <br><br>
+    </div>
 
-        <input type="number", id='AgeInput' min="1" max=120> <br>
-<br>
+    <div class="InputBlock">
+            <label for="AgeInput">Edad:</label><br>
+            <input type="number", id='AgeInput' min="1" max=120> 
+    </div>
         
 
-        <input type="date" name="" id="">
+    <div>
+            <input type="date" name="" id=""><br>
+        </div>
 
-        <input type='submit' value='guardar' >
+        
 
+    <div class="InputBlock">
+        <label for="cardbrandInput">Marca de tu coche:</label>
+        <input type="text" id="cardbrandInput" name="cardbrand" list="cardbrandList">
+        <datalist id="carbrandList">    
+        <option value="bmw">BMW</option>
+        <option value="Volkswaguen">Volkswaguen</option>
+        <option value="Ford">Ford</option>
+        <option value="RAM">RAM</option>
+        <option value="Mercedes">Mercedes</option>
+        </datalist>
+    </div>
+
+    <fieldset>
+        <legend>Información de tu pareja</legend>
+        <div>
+            <label for="NameInput">Nombre:</label><br>
+            <input type="text" id="NameInput" placeholder="Introduce tu nombre" name="UserName"> <!--La etiqueta Value nos permite darle valor a un Input, desde el backend lo que pediremos es el value del Input-->
+        </div>
+        <div class="InputBlock">
+            <label for="LastNameInput">Apellido:</label><br>
+            <input type="text" id="LastNameInput" placeholder="Introduce tu apellido" name="UserLastName"> 
+        </div> 
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Estado Civil</legend>
+        <div>
+            <input type="radio" name="CivilState" id="MarriedInput">
+            <Label for="MarriedInput">Casado</Label>
+        </div>
+        <div>
+            <input type="radio" name="CivilState" id="singleInput">
+            <Label for="singleInput">Soltero</Label>
+        </div>
+        <div>
+            <input type="radio" name="CivilState" id="DivorcedInput">
+            <Label for="DivorcedInput">Divorciado</Label>
+        </div>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Productos</legend>
+        <div>
+            <input type="checkbox" name="CivilState" id="MarriedInput">
+            <Label for="MarriedInput">Casado</Label>
+        </div>
+        <div>
+            <input type="checkbox" name="CivilState" id="singleInput">
+            <Label for="singleInput">Soltero</Label>
+        </div>
+        <div>
+            <input type="checkbox" name="CivilState" id="DivorcedInput">
+            <Label for="DivorcedInput">Divorciado</Label>
+        </div>
+    </fieldset>
+
+    <div class="InputBlock">
+        <label for="progressInput">Progreso</label>
+        <progress max="100" min="0" id="progressInput" value="60"></progress>
+    </div><br>
+
+    <div class="InputBlock">
+        <label for="gasInput">Progreso</label>
+        <meter max="100" min="0" id="gassInput" value="60">
+    </div><br>
+
+<label for="fileInput">Subir un archivo: </label>
+<input type="file" id="fileInput" name="fileInput" >
+
+
+    <input type='submit' value='guardar' ><br>
+    <input type='reset' value='vaciar' >
+
+    <input type="range">
 </form>
 
+<!--Multimedia / Media -->
 
-
+<img src="Imagenes/LosRoques.jpeg" width="auto">
 
 
 

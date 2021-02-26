@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Formulario</h2>
+
+<form action="" method="POST">
+    <fieldset>
+        <legend>Formulario de Registro</legend>
+
+        <div>
+            <label for="NameInput">Nombre:</label>
+            <input type="text" id="NameInput" name="UserNameInput" placeholder="Elon">
+            <label for="SurNameInput">Apellido:</label>
+            <input type="text" id="SurNameInput" name="UserSurNameInput" placeholder="Musk">
+        </div>
+            <br>
+        <div>
+            <label for="UserAgeInput">Edad:</label>
+            <input type="number" max="120" min="18"><br><br>
+            <label for="UserEmailInput">Email:</label>
+            <input type="email" placeholder="nombre@email.com"><br><br>
+            <label for="UserPasswordInput">Contraseña:</label>
+            <input type="password" placeholder="*****"><br>
+        </div>
+            <br>
+        <fieldset>
+            <legend>Género</legend>
+                <div>
+                    <input type="radio" name="GenderInput" id="GenderFemale">
+                    <Label for="GenderInput">Mujer</Label>
+                </div>
+                <div>
+                    <input type="radio" name="GenderInput" id="GenderMale">
+                    <Label for="GenderMale">Hombre</Label>
+                </div>
+                <div>
+                    <input type="radio" name="GenderInput" id="GenderOther">
+                    <Label for="GenderOther">Otro</Label>
+                </div>
+        </fieldset>
+            <br>
+
+        <div>
+            <label for="CountryInput">País:</label>
+            <input type="text" id="CountryInput" name="UserCountryeInput" placeholder="Introduce tu País"><br><br>
+            <label for="ProgrammingLanguageInput">Lenguaje de Programación:</label>
+            <select id="ProgrammingLanguageInput" name="UserProgrammingLanguageInput"><br>
+                <option value="" hidden></option>
+                <option value="JavsCript">JavaScript</option>
+                <option value="Java">Java</option> 
+                <option value="C++">C++</option>
+                <option value="PHP">PHP</option>
+            </select>
+        </div>
+            <br>
+            <br>
+        
+            <fieldset disabled>
+             <legend>Selecciona tu academia de programación favorita:</legend>
+            <div>
+                <input type="radio" name="SchoolInput" id="SchoolCodeEspace">
+                <Label for="SchoolInput">CodeEspace Academy</Label><br>
+
+            
+                <input type="radio" name="SchoolInput" id="SchoolGeneric2">
+                <Label for="SchoolGeneric2">Academia 2</Label><br>
+                
+                <input type="radio" name="SchoolInput" id="SchoolGeneric3">
+                <Label for="SchoolGeneric3">Otro</Label><br>
+            </div>
+            
+            </fieldset>
+
+        <div>
+
+
+        </div>
+        <br><br>
+        <div>
+            <input type="checkbox" name="EmailTerms&Condition" id="UserAgreementInput">
+            <Label for="UserAgreementInput">Acepto recibir cientos de miles de correos irrelevantes</Label><br>
+            <input type="checkbox" name="Terms&Condition" id="UserAgreementTerms&ConditioInput">
+            <Label for="UserAgreementTerms">Acepto recibir cientos de miles de correos irrelevantes</Label><br><br>
+
+            <input type='submit' value='Enviar' >
+            <input type='reset' value='Vaciar Formulario' >
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
