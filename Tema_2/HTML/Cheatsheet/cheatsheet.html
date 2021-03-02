@@ -2,10 +2,19 @@
 <html lang="en">
 
 <head>
+    <!--Metadatos / Metadata -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia de Software y Ciberseguridad"> <!--El contenido de Content es lo que sale en los buscadores en el bocadillo inferior al Link-->
+    <meta name="Author" content="codespace"> <!-- Idetnficiación del autor-->
+    <meta name="robots" content="noindex"> <!-- Opción para no ser Indexado en motores de búsqueda, esta opción está en index por defecto>-->
+    <meta  name="robots" content="nofollow">
+    <meta name="robots" content="follow"> <!-- Ordenes para detener el análisis de todos los enlaces de la página web, Follow es el comportamiento por defeto-->
     <title>Cheatsheet</title>
+    <script></script> <!-- La etiqueta del SCRIPT se suele poner al final porque así puede interactuar con el DOm de forma correcta, si no tuviese que hacerlo, también podría ponerse arriba-->
+    <style></style>
+    <meta http-equiv="cache-control" content="no-cache"> <!-- Herramiente utilizada para no guardar el caché, especial en páginas con alta rotación de contenido como Twitter-->
 </head>
 
 <body>
@@ -41,10 +50,12 @@
     <p>Lorem, ipsum dolor sit amet consectetur <b>adipisicing elit. Dolore minus praesentium</b> rerum adipisci quis sed
         illo
         velit corrupti officia quod, quas blanditiis doloribus, neque nobis corporis non excepturi modi mollitia aut
-        eveniet laborum! Neque sit <strong>esse explicabo velit </strong> fuga numquam voluptas?<em>Perspiciatis ipsa</em> 
+        eveniet laborum! Neque sit <strong>esse explicabo velit </strong> fuga numquam voluptas?<em>Perspiciatis
+            ipsa</em>
         exercitationem consequatur tenetur enim incidunt iure.
 
-        Lorem ipsum, dolor sit amet <s>consectetur adipisicing elit.</s> Ex vero quod sequi ab provident accusantium assumenda neque, eligendi nesciunt eaque?
+        Lorem ipsum, dolor sit amet <s>consectetur adipisicing elit.</s> Ex vero quod sequi ab provident accusantium
+        assumenda neque, eligendi nesciunt eaque?
     </p>
 
     <!-- La etiqueta pre nos genera un párrafo no responsive que rspetará al completo el como hayamos organizado el HTML
@@ -56,257 +67,297 @@
     itaque non, repellat suscipit. Quaerat, <span> reiciendis quia dolor at corrupti excepturi rerum quidem quas velit dolores voluptatum. 
     Esse nihil autem fugiat ipsum</pre>
 
-<p>La Molécula preferida por casi cualquier desarrollaodr es C<sub>3</sub>H<sub>10</sub>N<sub>3</sub>
+    <p>La Molécula preferida por casi cualquier desarrollaodr es C<sub>3</sub>H<sub>10</sub>N<sub>3</sub>
 
-<br>
-<br>
+        <br>
+        <br>
 
-El teorema de p<p>El teorema de pitágoras se conoce por la ecuación de:</p>
-<p><var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup></p>
+        El teorema de p
+    <p>El teorema de pitágoras se conoce por la ecuación de:</p>
+    <p><var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup></p>
 
-El bootcamp empieza a las <time datetime="09:30">09:30</time>
-dia fue el <time datetime="2021 02 01">El 1 de febrero de 2021.</time>
+    El bootcamp empieza a las <time datetime="09:30">09:30</time>
+    dia fue el <time datetime="2021 02 01">El 1 de febrero de 2021.</time>
 
-</p>
+    </p>
 
 
 
-<br><hr><br>
+    <br>
+    <hr><br>
 
-<!-- Contenedores/Containers-->
-<!-- se pueden hacer condiciones más grandes con frases compuestas como a*3{enlace}, el número del $ nos hará iteraciones numéricas sobre cada etiqueta, las class
+    <!-- Contenedores/Containers-->
+    <!-- se pueden hacer condiciones más grandes con frases compuestas como a*3{enlace}, el número del $ nos hará iteraciones numéricas sobre cada etiqueta, las class
 se pueden poner con un punto justo antes de la etiqueta a la que quieres que se asigne la clase por ejemplo nav>a*3.Enlace son las A's las que tendrán la clase
 Los artículos semánticos aside, article, section, header, nav, footer no tienen valor más que el de dar información sobre la organización del código. -->
 
-<nav><a href="">enlace</a><a href="">enlace</a><a href="">enlace</a></nav>
+    <nav><a href="">enlace</a><a href="">enlace</a><a href="">enlace</a></nav>
 
-<header>
-    <p><h1>Titulo</h1>
+    <header>
+        <p>
+        <h1>Titulo</h1>
         Contenido
-    </p>
-</header>
-<nav>
-    a*3(Enlace)
-</nav>
+        </p>
+    </header>
+    <nav>
+        a*3(Enlace)
+    </nav>
 
-<section>
-    <article>
-        <h1>TITULO 1</h1>
-        <P>Contenido del artículo</P>
-        <!--Las secciones representan una sección y el artículo se utiliza para definir una información específica-->
-    </article>
-</section>
+    <section>
+        <article>
+            <h1>TITULO 1</h1>
+            <P>Contenido del artículo</P>
+            <!--Las secciones representan una sección y el artículo se utiliza para definir una información específica-->
+        </article>
+    </section>
 
-<aside>
-    <!-- Los Laterales de la información.-->
-    <p>Menú generalmente lateral</p>
-</aside>
+    <aside>
+        <!-- Los Laterales de la información.-->
+        <p>Menú generalmente lateral</p>
+    </aside>
 
 
-<footer>
-    <p>Pie de Página</p>
-</footer>
+    <footer>
+        <p>Pie de Página</p>
+    </footer>
 
-<div class="div">Contenedr Genérico</div>
+    <div class="div">Contenedr Genérico</div>
 
-<br><hr><br>
+    <br>
+    <hr><br>
 
-<!-- Lisstas / Lists -->
+    <!-- Lisstas / Lists -->
 
-<ul> <!--Desordenada-->
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-    <li>Elemento 3</li>
-    <li>Elemento 4</li>
-    <li>Elemento 5</li>
-</ul>
+    <ul>
+        <!--Desordenada-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
 
-<ol>
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-    <li>Elemento 3</li>
-    <li>Elemento 4</li>
-    <li>Elemento 5</li>
-</ol>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ol>
 
-<ol start="500">
-    <li>Elemento</li>
-    <li>Elemento</li>
-    <li>Elemento</li>
-    <li>Elemento</li>
-    <li>Elemento</li>
-</ol>
+    <ol start="500">
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
 
-<br><hr><br>
+    <br>
+    <hr><br>
 
-<!-- Tablas/Table-->
+    <!-- Tablas/Table-->
 
-<table>
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Edad</th>
-        </tr>
-    </thead>
-    
-    <tbody> 
-        <tr>
-            <td>John</td>
-            <td>pepito@pepito.pe</td>
-            <td>25</td>
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <td>Janen</td>
-            <td>poe@pepito.pe</td>
-            <td>45</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>pepito@pepito.pe</td>
+                <td>25</td>
+            </tr>
 
-        <tr>
-            <td>Alumni</td>
-            <td>codespace@academy.es</td>
-            <td>99</td>
-        </tr>
+            <tr>
+                <td>Janen</td>
+                <td>poe@pepito.pe</td>
+                <td>45</td>
+            </tr>
 
-    </tbody>
+            <tr>
+                <td>Alumni</td>
+                <td>codespace@academy.es</td>
+                <td>99</td>
+            </tr>
 
-</table>
+        </tbody>
 
-<br><hr><br>
+    </table>
 
-<!-- Formularios / Forms -->
+    <br>
+    <hr><br>
 
-<form action="https://www.google.com" method="get">
-    <label for="NameInput">Nombre:</label><br>
-    <input type="text" id="NameInput" placeholder="Introduce tu nombre" name="UserName"> <!--La etiqueta Value nos permite darle valor a un Input, desde el backend lo que pediremos es el value del Input-->
+    <!-- Formularios / Forms -->
 
-    <div class="InputBlock">
-        <label for="LastNameInput">Apellido:</label><br>
-        <input type="text" id="LastNameInput" placeholder="Introduce tu apellido" name="UserLastName"> 
-    </div> 
+    <form action="https://www.google.com" method="get">
+        <label for="NameInput">Nombre:</label><br>
+        <input type="text" id="NameInput" placeholder="Introduce tu nombre" name="UserName">
+        <!--La etiqueta Value nos permite darle valor a un Input, desde el backend lo que pediremos es el value del Input-->
 
-    <div class="InputBlock">
-        <label for="emailInput">Email:</label><br>
-        <input type="email" id="emailInput" placeholder="Introduce tu correo" name="Useremail"> 
-    </div>
+        <div class="InputBlock">
+            <label for="LastNameInput">Apellido:</label><br>
+            <input type="text" id="LastNameInput" placeholder="Introduce tu apellido" name="UserLastName">
+        </div>
 
-    <div class="InputBlock">
-        <label for="PasswordInput">Contraseña:</label><br>
-        <input type="password" id="PasswordInput" placeholder="******" name="UserPassword">
-    </div>
+        <div class="InputBlock">
+            <label for="emailInput">Email:</label><br>
+            <input type="email" id="emailInput" placeholder="Introduce tu correo" name="Useremail">
+        </div>
 
-    <div class="InputBlock">
-        <label for="MessageInput">Mensaje:</label><br>
-        <textarea cols="50" rows="10" id="MessageInput" placeholder="Deja tu mensaje" name="UserMessage"> </textarea>
-    </div>
+        <div class="InputBlock">
+            <label for="PasswordInput">Contraseña:</label><br>
+            <input type="password" id="PasswordInput" placeholder="******" name="UserPassword">
+        </div>
 
-    <div class="InputBlock">
-        <label for="GenderInput">Género:</label><br>
-        <select  id="GenderInput"  name="UserMessage"><br>
-            <option value="" hidden></option>
-            <option value="female">Femenino</option>
-            <option value="masculine">Masculino</option> 
-            <option value="Otro">Otro</option>
-    </div>
+        <div class="InputBlock">
+            <label for="MessageInput">Mensaje:</label><br>
+            <textarea cols="50" rows="10" id="MessageInput" placeholder="Deja tu mensaje"
+                name="UserMessage"> </textarea>
+        </div>
 
-    <div class="InputBlock">
+        <div class="InputBlock">
+            <label for="GenderInput">Género:</label><br>
+            <select id="GenderInput" name="UserMessage"><br>
+                <option value="" hidden></option>
+                <option value="female">Femenino</option>
+                <option value="masculine">Masculino</option>
+                <option value="Otro">Otro</option>
+        </div>
+
+        <div class="InputBlock">
             <label for="AgeInput">Edad:</label><br>
-            <input type="number", id='AgeInput' min="1" max=120> 
-    </div>
-        
+            <input type="number" , id='AgeInput' min="1" max=120>
+        </div>
 
-    <div>
+
+        <div>
             <input type="date" name="" id=""><br>
         </div>
 
-        
 
-    <div class="InputBlock">
-        <label for="cardbrandInput">Marca de tu coche:</label>
-        <input type="text" id="cardbrandInput" name="cardbrand" list="cardbrandList">
-        <datalist id="carbrandList">    
-        <option value="bmw">BMW</option>
-        <option value="Volkswaguen">Volkswaguen</option>
-        <option value="Ford">Ford</option>
-        <option value="RAM">RAM</option>
-        <option value="Mercedes">Mercedes</option>
-        </datalist>
-    </div>
 
-    <fieldset>
-        <legend>Información de tu pareja</legend>
-        <div>
-            <label for="NameInput">Nombre:</label><br>
-            <input type="text" id="NameInput" placeholder="Introduce tu nombre" name="UserName"> <!--La etiqueta Value nos permite darle valor a un Input, desde el backend lo que pediremos es el value del Input-->
-        </div>
         <div class="InputBlock">
-            <label for="LastNameInput">Apellido:</label><br>
-            <input type="text" id="LastNameInput" placeholder="Introduce tu apellido" name="UserLastName"> 
-        </div> 
-
-    </fieldset>
-
-    <fieldset>
-        <legend>Estado Civil</legend>
-        <div>
-            <input type="radio" name="CivilState" id="MarriedInput">
-            <Label for="MarriedInput">Casado</Label>
+            <label for="cardbrandInput">Marca de tu coche:</label>
+            <input type="text" id="cardbrandInput" name="cardbrand" list="cardbrandList">
+            <datalist id="carbrandList">
+                <option value="bmw">BMW</option>
+                <option value="Volkswaguen">Volkswaguen</option>
+                <option value="Ford">Ford</option>
+                <option value="RAM">RAM</option>
+                <option value="Mercedes">Mercedes</option>
+            </datalist>
         </div>
-        <div>
-            <input type="radio" name="CivilState" id="singleInput">
-            <Label for="singleInput">Soltero</Label>
-        </div>
-        <div>
-            <input type="radio" name="CivilState" id="DivorcedInput">
-            <Label for="DivorcedInput">Divorciado</Label>
-        </div>
-    </fieldset><br>
 
-    <fieldset>
-        <legend>Productos</legend>
-        <div>
-            <input type="checkbox" name="CivilState" id="MarriedInput">
-            <Label for="MarriedInput">Casado</Label>
-        </div>
-        <div>
-            <input type="checkbox" name="CivilState" id="singleInput">
-            <Label for="singleInput">Soltero</Label>
-        </div>
-        <div>
-            <input type="checkbox" name="CivilState" id="DivorcedInput">
-            <Label for="DivorcedInput">Divorciado</Label>
-        </div>
-    </fieldset>
+        <fieldset>
+            <legend>Información de tu pareja</legend>
+            <div>
+                <label for="NameInput">Nombre:</label><br>
+                <input type="text" id="NameInput" placeholder="Introduce tu nombre" name="UserName">
+                <!--La etiqueta Value nos permite darle valor a un Input, desde el backend lo que pediremos es el value del Input-->
+            </div>
+            <div class="InputBlock">
+                <label for="LastNameInput">Apellido:</label><br>
+                <input type="text" id="LastNameInput" placeholder="Introduce tu apellido" name="UserLastName">
+            </div>
 
-    <div class="InputBlock">
-        <label for="progressInput">Progreso</label>
-        <progress max="100" min="0" id="progressInput" value="60"></progress>
-    </div><br>
+        </fieldset>
 
-    <div class="InputBlock">
-        <label for="gasInput">Progreso</label>
-        <meter max="100" min="0" id="gassInput" value="60">
-    </div><br>
+        <fieldset>
+            <legend>Estado Civil</legend>
+            <div>
+                <input type="radio" name="CivilState" id="MarriedInput">
+                <Label for="MarriedInput">Casado</Label>
+            </div>
+            <div>
+                <input type="radio" name="CivilState" id="singleInput">
+                <Label for="singleInput">Soltero</Label>
+            </div>
+            <div>
+                <input type="radio" name="CivilState" id="DivorcedInput">
+                <Label for="DivorcedInput">Divorciado</Label>
+            </div>
+        </fieldset><br>
 
-<label for="fileInput">Subir un archivo: </label>
-<input type="file" id="fileInput" name="fileInput" >
+        <fieldset>
+            <legend>Productos</legend>
+            <div>
+                <input type="checkbox" name="CivilState" id="MarriedInput">
+                <Label for="MarriedInput">Casado</Label>
+            </div>
+            <div>
+                <input type="checkbox" name="CivilState" id="singleInput">
+                <Label for="singleInput">Soltero</Label>
+            </div>
+            <div>
+                <input type="checkbox" name="CivilState" id="DivorcedInput">
+                <Label for="DivorcedInput">Divorciado</Label>
+            </div>
+        </fieldset>
+
+        <div class="InputBlock">
+            <label for="progressInput">Progreso</label>
+            <progress max="100" min="0" id="progressInput" value="60"></progress>
+        </div><br>
+
+        <div class="InputBlock">
+            <label for="gasInput">Progreso</label>
+            <meter max="100" min="0" id="gassInput" value="60">
+        </div><br>
+
+        <label for="fileInput">Subir un archivo: </label>
+        <input type="file" id="fileInput" name="fileInput">
 
 
-    <input type='submit' value='guardar' ><br>
-    <input type='reset' value='vaciar' >
-    <input type="range">
+        <input type='submit' value='guardar'><br>
+        <input type='reset' value='vaciar'>
+        <input type="range">
 
-</form>
+    </form>
 
-<!--Multimedia / Media -->
-<button>botón</button>
+    <!--Multimedia / Media / Incrustraciones -->
+    <button>botón</button>
 
-<img src="Imagenes/LosRoques.jpeg" width="auto">
+    <img src="Imagenes/LosRoques.jpeg" width="auto">
 
 
+    <iframe
+        src="http://www.juntadeandalucia.es/empleo/recursos/material_didactico/especialidades/materialdidactico_tic_linux_basico/manuales/tema1.pdf"
+        frameborder="0" width="500" height="400"></iframe>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Object es una forma de incrustar algún objeto que no necesite plugins, como algún controlador específico, no es muy común verlo.-->
+
+    <object data="" type=""></object>
+
+
+    <!-- Citas/Quotation-->
+    <h3>Citas / Quotation</h3>
+
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, est dolores voluptatum dolorem a
+        culpa ab voluptas eveniet repellendus unde ut, minima quaerat ullam reprehenderit odio modi quasi velit eius.
+        Eaque, molestiae sint quas minima consequatur veritatis consectetur ad saepe dolorum? Repellendus consequuntur
+        magnam perspiciatis voluptas iste mollitia ipsa accusamus facilis, beatae eaque? Quo temporibus laudantium
+        maxime quia nostrum laborum distinctio tempore odit repellendus voluptate a quas, nam autem aspernatur, dolore
+        nisi delectus, soluta sint architecto exercitationem sapiente omnis ducimus enim! Voluptatibus at sit sapiente
+        magni aliquid reiciendis, non temporibus cum! Molestiae at maiores nisi laborum, alias dolore dolorem fugiat.
+    </blockquote>
+
+<!-- con Q también puede hacerse un Quote específico-->
+
+    <q>Soy Programador FP <abbr title="Soy Programador FP"></abbr></q><br><hr><br>
+
+<!--Scripting-->
+
+<script>document.write('Esto está escrito desde JS')</script>
+<noscript>Error, su navegador no está reproduciendo JavaScript</noscript>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 
