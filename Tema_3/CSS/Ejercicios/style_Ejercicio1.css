@@ -1,0 +1,54 @@
+* {
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #555;
+}
+
+a {
+    color: #CC3300;
+}
+
+#primero p {
+    color: #336699;
+}
+
+#primero em {
+    background: #FFCC99;
+    padding: .1em;
+}
+
+/* El espacio funciona cmo jerarquía, en el caso de em.special está junto porque nos referimos a un único elemento, que conjunta y se escribe <em class=especial>, no hay una jerarquía y por tanto no se debe poner espacio. */
+em.especial {
+    background: #FFCC99;
+    border: 1px solid #ff9900;
+    padding: .1em;
+}
+
+.normal span {
+    font-weight: bold;
+}
+
+/* La etiqueta para jerarquía '>' nos obliga a que el objeto a manipular/condicionar ESTÉ DEBAJO, ÚNICAMENTE (SIN OTRO EN MEDIO) PARA PODER ACCEDER A ÉL el espacio ' ' tomará todos los elementos dentro sin discriminar cual sea su nivel de profundidad)*/
+
+#primero {
+    height: 50vh;
+    background-image: url(Imagen.jpeg);
+    background-position: center bottom; /* se hace referencia a los ejes X e Y que la foto toma para mostrarlo (en caso de ser recortad) */
+    /* este comando hace que la imagen si es pequeña se contenga en el centro, especialmente si la imagen es más pequeña que el contenedor*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+}
+
+
+/* Eliminamos el estilo por defecto del modelo de caja para los factores h1*/
+
+h1 {
+    color: white;
+    margin: 0;
+    border: none;
+    padding: 0;
+
+}

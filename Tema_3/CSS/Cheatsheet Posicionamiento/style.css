@@ -1,0 +1,52 @@
+/* Tipos de Display: None, Inline, Block, Inline-Block */
+/* para seleccinar todos los atributos (class) cuyo valor empiece por las carcaterísticas señaladas hacemos:
+el caracter ^ nos indica 'El principio de algo */
+/* cuando hablamos de display hablamos del tipo de caja que engloba el elemento
+Por ejemplo si esta tiene  no bordes*/
+
+[class^="box"]{
+
+background-color: turquoise;
+
+}
+
+/* .box-0, .box-1, .box-2, .box-.3, .box-4, .box-5, .box-6 {
+background-color: turquoise;
+} es exactamente lo mismo. */
+
+.box-0 {
+    display: none;
+}
+
+/* Aquí vemos los ejemplos de Inline e Inline-Block, en ambos casos los objetos pasan a ser
+Inline solo que en el primero se respeta el Block y por tanto puede tener márgenes, padding*/
+
+.box-3, .box-4, .box-3 p, .box-4 p {
+    display: inline-block;
+}
+
+.box-5, .box-6, .box-5 p, .box-6 p {
+    display: inline;
+}
+
+.parent {
+    background-color:blue;
+    height: 100px;
+    width: 100px;
+    padding-top: 50px;
+    margin-left: 150px;
+    margin-right: 150pc;
+}
+
+.child {
+    background-color: red;
+    height: 50px;
+    
+}
+
+.x-centered {
+    background: yellowgreen;
+    height: 50px;
+    width: 25%;
+    margin: auto;
+}
