@@ -1,0 +1,117 @@
+/* body{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+} */
+
+header {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-right:  1%;
+    margin-left: 1%;
+   
+}
+.up-header {
+    border: solid 2px grey;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    padding: 1%;
+    position: relative;
+  
+    
+}
+
+form {
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+}
+
+
+nav {
+    border: grey solid 2px;
+    width: 100%;
+    padding-top: 1em; padding-bottom: 1em;
+  
+}
+
+.Aside-Section-Article-Div {
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    margin-left: 1%;
+    margin-right: 1%;
+ 
+}
+
+aside {
+    border: 1px solid grey;
+    width: 10%;
+    margin-right: 1%;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.full-section {
+    border: 1px solid grey;
+    width: 89%;
+    overflow: hidden;
+    float: inline-start;
+    box-sizing: border-box;
+    
+}
+
+
+.article-section {
+    border: 1px solid grey;
+    width: 70%;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+
+}
+
+[class^="img"] {
+    float: left;
+    margin-right: 0.5%;
+    margin-left: 1%;
+}
+
+.aside-right-section {
+
+    border: 1px solid grey;
+    width: 20%;
+    float: right;
+    padding: 1%;
+    box-sizing: border-box;
+    
+}
+
+footer{
+    clear: both;
+}
+
+.footer-div {
+    border: 2px solid grey;
+    width: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 1%;
+   
+  
+}
+
+.copyright {
+    float: right;
+    margin-right: 1%;
+}
+
+.links {
+    float: left;
+    margin-left: 1%;
+}

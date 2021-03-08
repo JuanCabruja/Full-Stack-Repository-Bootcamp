@@ -1,0 +1,45 @@
+.list-parent {
+    background-color: rgb(243, 243, 243);
+    overflow: hidden;
+    border: 1px solid rgb(87, 85, 85);
+    width: 250px;
+    list-style-image: url("imagenes/play-button-2.png");   /* No he podido incrustar la imágen el tamaño se hace gigante*/
+    list-style-position: inside;
+    padding: 0;
+}
+
+[class^="child-list"]{
+   
+    border-top: 1px solid rgb(87, 85, 85);
+    border-bottom: 1px solid rgb(87, 85, 85);
+    text-align-last: left;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+/* El Pseudo selector Hover nos indica que se ejecutará ese código cuando el ratón esté por encima */
+
+[class^="child-list"]:hover{
+    color: red;
+    background-color: rgb(172, 172, 172);
+
+}
+
+
+/*Alineamiento de los Estilos*/
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul {
+    width: 250px;
+    cursor: pointer; /* Cambia el estilo del puntero al pasar por encima */
+    list-style-position: inside; /* Mete el icono dentro del li */
+    list-style-image: url(images/ul-icon.png);  
+}

@@ -1,0 +1,32 @@
+
+.parent {
+    background-color: rgb(250, 247, 247);
+    border: 1px solid rgb(199, 199, 199);
+    overflow: hidden;
+    width: 50%;
+    position: fixed;
+    box-sizing: border-box;
+    
+}
+
+.child-1 {  
+    float: left;
+    padding: 6px;
+    width: auto;
+}
+
+.child-2 {
+    float: right;
+   padding: 6px;
+   width: auto;
+}
+
+/*Alineamiento de los Estilos*/
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

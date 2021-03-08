@@ -54,4 +54,15 @@ h1 {
 }
 
 
-/* Posicionamiento */
+/* Pseudo-Clases : y Pseudo-Elementos :: */
+
+/* Las Pseudo-Clases podemos definirlas como los estados de un Elemento y a través de ellas podemos manipularlas
+O para manipular las propiedades de los elementos que existe en el HTML */
+
+/*Los Pseudoelementos son etiquetas que utilizamos para seleccinar letras u objetos que de por sí no existen como elemento
+con etiqueta en el HTML*/
+
+a:visited /* Pseudoselector que nos cambia la cndición del enlace una vez ha sido visitado. Ejem. le cambia el color por defecto*/
+
+p::first-letter /*se puede utilizar para cambiar la primera letra del primer párrafo*/
+
