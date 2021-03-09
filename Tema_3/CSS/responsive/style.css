@@ -1,0 +1,30 @@
+
+
+
+.responsive {
+    height: 100px;
+    background: aquamarine;
+    width: 30%;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 700px) {
+    .responsive{
+       
+        width: 100%;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 920px) {
+    .responsive{
+       
+        width: 100%;
+    }
+}
+
+/* El concepto del Mobile First se empieza trabajando con la página orientada a la pantalla más pequeña
+y luego irá escalando*/

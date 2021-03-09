@@ -218,3 +218,16 @@ Sirve también para evitar utilizar el ClearFix*/
     box-sizing: border-box;
 }
 
+
+/* Diseño Responsive*/
+
+/* A través de la propiedad @media se pueden establecer breakpoints para disparar unas reglas, por ejemplo.*/
+
+@media only screen and (max-width: 758px) {
+    .container-1, .container-2, .container-3 {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*Como podemos ver, si se dan esas condiciones, ese código sobreescribe los anteriores al ser el ultimo*/

@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(34, 1, 95);
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+a:last-child {
+    display: none;
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Media Query*/
+
+@media only screen and (min-width: 758px ) {
+    a {
+        float: left;
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1000px ) {
+    a {
+      
+        width: 20%;
+    }
+
+    a:last-child {
+        display: block;
+    }
+}

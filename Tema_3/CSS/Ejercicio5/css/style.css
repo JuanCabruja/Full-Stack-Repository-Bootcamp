@@ -1,0 +1,124 @@
+.container {
+   background: black;
+    width: 100%;
+  
+}
+
+.top-header {
+    background-color: #01065e;
+}
+
+.top-header h1 {
+    color: white; 
+    padding: 2.5%;
+    margin: 0;
+    font-size: 50px;
+}
+
+
+.navbar {
+    height: 100px;
+    position: relative;
+}
+
+
+a, p {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 2.5%;
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.container-img {
+    background: url(../Imagenes/sam-goodgame-LU6qi__R2aE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding: 10%;
+}
+
+.container-img h1 {
+    color: white;
+    padding: 2.5%;
+    margin: 0;
+}
+
+.container-img h1 {
+    font-size: 4em;
+    color: white;
+}
+
+.content-box {
+    background: rgb(7, 1, 29);
+    padding: 5%;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+article {
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 65%;
+   text-align: justify;
+    font-size: 30px;
+    color: white;
+    margin-left: 5%;
+}
+
+aside{
+    background:  rgba(23, 3, 94, 0.829) ;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 25px;
+    padding: 1%;
+    
+   
+}
+
+footer {
+    height: 5em;
+    padding: 2.5%;
+}
+
+footer p {
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    padding: 1%;
+}
+
+/* Media Queries*/ /* Me queda pendiente dejar esto responsive*/
+
+@media only screen and (max-width: 778px) {
+    .content-box article {
+        float: none;
+        width: 100%;
+    }
+
+    .content-box aside {
+        float: none;
+        width: 100%;
+    }
+}
