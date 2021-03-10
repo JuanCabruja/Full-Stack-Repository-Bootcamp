@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(86, 6, 97);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    border-radius: 15px;
+}
+
+.color {
+    background-color: rgb(212, 207, 207);
+
+}
+.content-parent {
+    background-color: rgb(243, 243, 243);
+    width: 500px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 2%;
+    gap: 5%;
+
+}
+
+.LogoText {
+    color: gray;
+    font-size: 20px;
+    
+}
+
+.text-content {
+    height: 80px;
+    width: 100%;
+}
+
+
+
+
+.round-box {
+    margin-top: 40%;
+    margin-bottom: 1%;
+    border-radius: 50%;
+    width: 20%;
+    height: 22%;
+}
+
+.text-content-small {
+    width: 40%;
+    height: 70px;
+}

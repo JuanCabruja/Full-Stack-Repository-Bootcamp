@@ -231,3 +231,44 @@ Sirve también para evitar utilizar el ClearFix*/
 }
 
 /*Como podemos ver, si se dan esas condiciones, ese código sobreescribe los anteriores al ser el ultimo*/
+
+/* Flexbox */
+
+
+/* âra activar Flexbox utilizaremos la etiqueta display: flex; y flex-direction para su dirección
+Es importante destacar que Flex solo funciona en una dimensión, para organizaciones más complejas
+podemos utilizar tmb CSS Grid */
+
+
+/*el elemento que tiene el display: flex se considera el contenedor Flex y los de dentro elementos flex */
+
+/* En los elementos Flex se puede especificar agregando (odd/even) al selector CSS para darle valores a los contenedores
+pares o impares*/
+
+.flex-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /*nowrap es el valor por defecto, con este propiedad decidmos si ajusta las filas
+    al tamaño de la pantalla  haciéndolas más pequeñas o cambiando su posición*/
+    flex-flow: row wrap; /*flex-flow es la mezcla entre flex-direction y flex-wrap*/
+    
+}
+
+/*Ejemplo de Odd o Even*/
+.flex-parent>div:nth-child(odd) {
+    width: 250px;
+    background-color: whitesmoke ;
+    color: rgb(19, 17, 17);
+}
+
+.flex-parent>div:nth-child(even) {
+    width: 250px;
+    background-color: rgb(20, 20, 20) ;
+    color: rgb(209, 185, 185);
+}
+
+.flex-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
