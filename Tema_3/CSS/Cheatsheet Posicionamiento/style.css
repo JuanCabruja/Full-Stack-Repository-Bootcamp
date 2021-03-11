@@ -272,3 +272,7 @@ pares o impares*/
     justify-content: center;
     align-items: center;
 }
+
+
+/* la propiedad Flex-Grow permite hacer que un elemento Flex crezca en el espacio que tenga disponible
+por defecto flex-grow es 0, el número mayor tomará más espacio */

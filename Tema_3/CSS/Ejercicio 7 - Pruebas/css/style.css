@@ -54,10 +54,3 @@ body {
 }
 
 /*Media Query*/
-
-@media media screen only and (min-width: 1024px) {
-    .content-parent {
-        width: 990px;
-        height: 740px
-    }
-}
