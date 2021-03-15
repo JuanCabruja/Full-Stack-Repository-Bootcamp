@@ -1,0 +1,27 @@
+.content-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f4f5f7;
+    padding: 10%;
+    
+}
+
+.card-box  {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    height: 500px;
+}
+
+.text-grid {
+ background-color: aquamarine;
+}
+
+.img-grid {
+
+    background-image: url("https://c4.staticflickr.com/9/8056/29341429235_9fc423c1c5_b.jpg");
+
+
+}

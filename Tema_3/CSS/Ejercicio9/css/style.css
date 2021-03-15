@@ -1,0 +1,191 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+
+}
+
+[class^=grid-child] {
+    background-color: rgb(10, 10, 102);
+    height: 100px;
+    width: 100px;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    opacity: 0%;
+
+ 
+}
+
+[class^="grid-child"]:hover {
+
+    transform: scale(1.5)
+}
+
+.grid-child-1 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-5 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-9 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+}
+
+.grid-child-13 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+}
+
+.grid-child-2 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-6 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-10 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-14 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-3 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-7 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-11 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-15 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-4 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-8 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-12 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 14s;
+    animation-fill-mode: forwards;
+}
+
+.grid-child-16 {
+
+    animation-name: opening;
+    animation-timing-function: ease-in;
+    animation-duration: 1S;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+@keyframes opening {
+    from {
+        opacity: 0%;
+    }
+
+    to {opacity: 100%;}
+}

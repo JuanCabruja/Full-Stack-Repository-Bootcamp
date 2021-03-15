@@ -1,0 +1,88 @@
+[class^="gradient"] {
+    height: 200px;
+    margin-bottom: 10px;
+    width: 90%;
+    background-color: blue;
+}
+
+.gradient-1 {
+    background: linear-gradient(to right, blue, white );
+    background-size: cover;
+}
+
+.gradient-2 {
+    background: linear-gradient(to top, blue, white 50%, blue);
+    background-size: cover;
+}
+
+.gradient-3 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255), url("https://www.tourinews.es/uploads/s1/65/53/8/puerto%20la%20Cruz_4_732x400.jpg"));
+    background-size: cover;
+}
+
+.gradient-4 {
+    background: radial-gradient(white, blue, red);
+    width: 50%;
+    box-shadow: 5px 5px 15px black;
+}
+
+/* Transformaciones */
+
+.transform {
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+
+    transform: translate(300px, -20px) rotate(45deg) scale(0.75) skew(25deg);
+}
+
+
+/* Transiciones */
+
+.transition {
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    cursor: pointer;
+    margin: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Todo esto voy a tener q revisarlo bien en los Manuales */
+
+.transition:hover {
+    transform: scale(1.5) rotate(5deg);
+}
+
+/* Animaciones */
+
+.text-animation {
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slidein {
+    from {
+        /* margin-left: 100%; */
+        color: red
+    }
+
+    50% {
+        color: black;
+        /* margin-left: 0%; */
+    }
+
+    to {
+        /* margin-left: 100%; */
+        color: red
+    }
+}
