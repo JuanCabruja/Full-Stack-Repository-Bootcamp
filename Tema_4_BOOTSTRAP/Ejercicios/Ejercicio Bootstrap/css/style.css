@@ -1,0 +1,28 @@
+.img-contact {
+    background-image: url(../Images/pexels-wendy-wei-2974600.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item { 
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url(../Images/pexels-north-1407322.jpg);
+
+
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(../Images/pexels-pixabay-210773.jpg);
+
+    
+}
+
+.carousel-item:nth-child(3) {
+
+    background: url(../Images/pexels-pixabay-258283.jpg);
+}
