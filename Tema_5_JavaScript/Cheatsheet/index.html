@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet Javascript</title>
+</head>
+    
+<!-- Hacer Elementos Inline está desaconsejado en términos generales, a excepcion de React por su funcionamiento -->
+<!-- Aquí tenemos los 3 tipos de Script Inline, Interno y Externo -->
+   
+
+    <h1>Procesar Javascript</h1>
+
+<!-- Inline -->
+    <a href="#" onclick="console.log('Hola desde un script inline')">Inline script</a>
+
+<!-- Interno -->
+    <a href="#">Internal Script</a>
+
+<!-- Externo (main.js) -->
+    <a href="#">External Script</a>
+
+
+
+
+    <script>
+        // let x, y = 2;
+        // console.log("Hola Futuro.", x, y);
+
+        function saludo () {
+            alert("Hola desde un script interno");
+            console.log("Has hecho click");
+        }
+        document.getElementsByTagName("a").item(1).addEventListener("click", saludo);
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
