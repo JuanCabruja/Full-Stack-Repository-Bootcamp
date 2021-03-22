@@ -343,138 +343,146 @@ html {
   height: 100%;
 }
 
-
 body {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--gray-light);
-  font-family: Inter, system-ui, Roboto, Helvetica, Arial;
-}
-
-
-
-.content-parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-  
+    height: 100%;
+    background-color: var(--gray-light);
     
-    width: 95%;
-    height: auto;
-  
-
 }
 
-.card-box  {
-    background-color:white;
-    display: grid;
-    grid-template-rows: 2fr 5fr;
-  
+header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    height: auto;
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px  rgb(121, 119, 119);
-}
-
-.text-grid {
-    padding: 5%;
-    background-color:transparent;
+    padding: 2vh;
+    background-color: white;
     box-sizing: border-box;
-
+    box-shadow: 0px 1px 10px rgb(201, 201, 201);
+    color: var(--purple-light);
 }
 
-.img-grid {
-
-    background-image: url("../images/pexels-ylanite-koppens-796602.jpg");
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
-    background-position: center;
+.round-img-header {
+    border-radius: 50%;
+    background-image: url(../images/User1.jpeg);
+    height: 30px;
+    width: 30px;
     background-size: cover;
-
+    background-position: center;
 }
 
-form {
+/* .body-container {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    height: 100%;
+} */
+
+.dashboard-place {
+    display: block;
+    width: 100%;
+    padding: 2vh;
     box-sizing: border-box;
 }
 
-.box {
-  width: 100%;
-  margin: 1vh;
-  margin-left: 0;
-  margin-right: 0;
-  box-sizing: border-box;
-
+.nav-organizer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+nav {
+    background-color: var(--purple-dark);
+    display: inline-flex;
+    /* justify-content: space-around; */
+    border-radius: 8px;
+    padding: 2vh;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
 }
 
-label {
-  display:block;
-  margin-top: 2vh;
-}
-
-
-
-.btn-box {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 1vh;
-  margin-left: 0;
-  margin-right: 0;
-  border-radius:  8px;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-}
-
-.logIn {
-  background-color: var(--purple-light);
-  color: white;
-  margin-bottom: 3vh;
-}
-
-button {
-  background-color: transparent;
+.inline-fixer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
 }
 
 a {
-  text-decoration: none;
-  color: var(--purple-dark);
+    text-decoration: none;
+    color: white;
 }
 
-
-/* Media Queries */
-
-@media only screen and (min-width: 920px) {
-  .card-box  {
-    background-color:white;
+.information-grid {
     display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: none;
-  
-    width: 50%;
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px  rgb(121, 119, 119);
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    border-radius: 4px;
+    gap: 2vh;
+    padding: 1vh;
+    box-sizing: border-box;
+    width: 100%;
+    
 }
 
-.img-grid {
-
-  background-image: url("../images/pexels-ylanite-koppens-796602.jpg");
-  border-top-left-radius: 2%;
-  border-bottom-left-radius: 2%;
-  border-top-right-radius: 0;
-  background-position: center;
-  background-size: cover;
-
+[class^="round-img-"] {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
-.text-grid {
-  padding: 10%;
-  background-color:transparent;
-  box-sizing: border-box;
+[class^="-Info"] {
+   
+    background-color: white;
+    border-radius: 4px;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border: 1px var(--gray-dark);
 
+    display: inline-flex;
+
+    box-sizing: border-box;
+    /* margin: 1%; */
+   
 }
+
+.img-info {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+.round-img-1 {
+    background-image: url(../images/User2.jpeg);
+}
+
+.round-img-2 {
+    background-image: url(../images/User3.jpeg);
+}
+
+.round-img-3 {
+    background-image: url(../images/User4.jpeg);
+}
+
+.round-img-4 {
+    background-image: url(../images/User5.jpeg)
+}
+
+.information-text-container {
+    box-sizing: border-box;
+}
+
+.information-text-container {
+    display: block;
+    margin-left: 1vw;
+    align-items: center;
+    justify-content: center;
 }
 
 

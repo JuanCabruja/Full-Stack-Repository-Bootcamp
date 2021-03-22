@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login-style.css">
+    <link href="css/all.css" rel="stylesheet">
     <title>Login Ejercicio Final</title>
 
 </head>
@@ -20,22 +21,30 @@
             
             <div class="text-grid">
 
-                <h1>Login</h1>
+                <h2>Login</h2>
 
                 <form action="#" method="post">
-                    <label for="UserLoginID">Usuario</label> <br>
-                    <input type="text" name="UserLoginID" id="UserLoginID" placeholder="Usuario">
 
-                    <br>
+                    <label for="UserLoginID">Usuario</label> 
+                    <input type="text" name="UserLoginID" id="UserLoginID" placeholder="Usuario" class="box">
 
-                    <label for="UserLoginPassword">Contraseña</label><br>
-                    <input type="password" name="UserLoginPassword" id="UserLoginPassword" placeholder="*****">
+                
 
-
-
-
-
+                    <label for="UserLoginPassword">Contraseña</label>
+                    <input type="password" name="UserLoginPassword" id="UserLoginPassword" placeholder="*****" class="box">
+                   
+                    <input type="button" value="Log In" name="LogInBtn" id="UserLoginBtn" class="btn-box logIn ">
                 </form>
+
+            
+
+                
+
+                <button class="btn-box"><i class='fab fa-github'> GitHub </i></button>
+                <button class="btn-box"><i class="fab fa-twitter"> Twitter</i></button>
+
+                <a href="#">Forgot your password?</a> <br>
+                <a href="#">Create an account</a>
             </div>
 
            
