@@ -140,11 +140,17 @@ console.log(number, typeof number);
 //------------------------------------------------- Objects -----
 
 let person = {
-    name: "John",
+    name: "Jane",
     age: 30,
     blonde: false,
+
+    // presentarse() {
+    //     console.log(`Me llamo ${this.name}, tengo ${this.age} y soy ${this.blonde ? }`) - Me falta verlo y practicar
+    // }
      
 }
+
+
 
 console.log(person);
 console.log(`Se llama ${person.name} y tiene ${person.age} años.`);
@@ -203,3 +209,129 @@ if (randomNumber === guessedNumber) {
 } else {
     console.log("El numero secreto es menor.");
 }
+
+console.clear();
+
+
+// Ternary Operator: Tengo q verlo en la clase online
+// Switch 
+
+let option = 3;
+switch (option) {
+    case 1:
+        // Contenido para case 1
+        console.log("Option vale 1");
+        break;
+    case 2:
+        // Contenido para case 1
+        console.log("Option vale 2");
+    break;
+    case 3:
+        // Contenido para case 1
+        console.log("Option vale 3");
+    break;
+    case 4:
+        // Contenido para case 1
+        console.log("Option vale 4");
+    break;
+    default: // De Otro Modo PseInt
+        console.log("Option vale otro");
+}
+
+// ------------------------- Funciones
+// Nombradas
+
+function greet (name, lastName) {
+    console.log(`Hola ${name} ${lastName}, ¿que tal?`);
+}
+
+greet();
+greet("Marco", "Aurelio");
+
+function square(num) {
+    return num*num;
+}
+
+console.log(square());
+console.log(square(2));
+console.log(square(5));
+
+//Anonimas
+
+let numbersArray = [5, 51, 1, 15, 2];
+console.log(numbersArray);
+numbersArray.sort(); //Ordena Según ASCII
+console.log(numbersArray);
+
+
+
+
+function orderNumbers (a, b){
+    if (a < b) {
+        return -1;
+    }
+    else if (a === b){
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+// const Person6 = {
+//     name: " ",
+//     age: 5,
+// }
+
+// const Person5 = {
+//     name: " ",
+//     age: 55,
+// }
+
+// const Person4 = {
+//     name: " ",
+//     age: 50,
+// }
+
+
+
+
+//Array sort orderNumbers
+numbersArray.sort(orderNumbers);
+console.log(numbersArray);
+
+//
+
+numbersArray.sort(function (a, b) {return a - b})
+console.log(numbersArray);
+numbersArray.sort(function (a, b) {return b - a})
+console.log(numbersArray);
+
+const perimeterOfSquare =  (side) => side*4;
+console.log(perimeterOfSquare(5));
+
+// Arrow Functions
+
+
+
+// let perimeterOfSquare = function (side) { // Función anónima normal
+//     return side * 4;
+//     }
+// perimeterOfSquare = function (side) {return side * 4;} // (opcional) Una única línea
+// perimeterOfSquare = (side) => {return side * 4;} // Sustituyo function por la flecha después de params.
+// perimeterOfSquare = (side) => side * 4; // Si sólo quiero devolver algo, quito llaves y return.
+// perimeterOfSquare = side => side * 4; // Si sólo tiene 1 param, puedo quitar paréntesis.
+
+
+
+console.log(perimeterOfSquare(5));
+
+numbersArray.sort((a, b) => b.age - a.age);
+console.log(numbersArray);
+
+
+//----- For
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
+
