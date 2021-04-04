@@ -10,6 +10,42 @@
 <!-- Hacer Elementos Inline está desaconsejado en términos generales, a excepcion de React por su funcionamiento -->
 <!-- Aquí tenemos los 3 tipos de Script Inline, Interno y Externo -->
    
+<!-- Pequeño CSS Interno para el ejercicio, normalmente va fuera. -->
+<style> 
+
+    a {
+        font-size: 3em;
+        display: block;
+    }
+
+    .grandparent {
+        height: 500px;
+        background-color: brown;
+    }
+
+    .parent {
+        background-color: darkcyan;
+    }
+
+    .child {
+        background-color: darkgoldenrod;
+    }
+
+    .grandparent, .parent, .child {
+        border: 5px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-grow: 1;
+        padding: 25px;
+        
+
+    }
+
+    
+
+</style>
 
     <h1>Procesar Javascript</h1>
 
@@ -21,6 +57,21 @@
 
 <!-- Externo (main.js) -->
     <a href="#">External Script</a>
+
+    <h1>Acceso al DOM</h1>
+
+    <div class="grandparent" id="grandparent">
+        <div class="parent" id="parent1">
+            <div class="child" id="child1">child 1</div>
+            <div class="child" id="child2">child 2</div>
+        </div>
+
+        <div class="parent" id="parent2">
+            <div class="child" id="child3">child 2</div>
+            <div class="child" id="child4">child 3</div>
+
+        </div>
+    </div>
 
 
 

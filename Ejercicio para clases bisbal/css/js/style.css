@@ -1,0 +1,17 @@
+html {
+height: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+[class^="container"] {
+    width: 100&;
+    border: 1px black;
+    display: flex;
+
+}
+
+
+
