@@ -469,13 +469,65 @@ function nodeCreator(id, label) {
     return newNode;
 }
     
+// Events
+
+console.clear();
+const colorButton = document.getElementsByTagName("button")[0];
+colorButton.addEventListener("click", function (event){
+    console.log(event)
+    console.log(event.target);
+    // document.body.style.backgroundColor = "green";
+    // document.body.classList.toggle("bg-red");
+    console.log(event.target.tagName);
+
+    if (event.shiftKey) {
+        document.body.classList.toggle("bg-red");
+    }
+    console.log(`X: ${event.clientX} Y: ${event.clientY}`);
+    console.log(`Àlt: ${event.altKey}. Shift: ${event.shiftKey}. Ctrl: ${event.ctrlKey}`);
+});
 
 
 
+// Ejemplo seleccionar un elemento Input del Html y cambiar el H
+// Segun el evento, agregando una clase. 
+
+const emailInput = document.querySelector("#emailInput");
+emailInput.addEventListener("focus", inputListener);
+emailInput.addEventListener("blur", inputListener);
+
+function inputListener(e) {
+    console.log("Tipo de evento: ", e.type);
+    // e.target.style.border = "2px solid green";
+
+    // if (e.type === "focus") {
+    //     e.target.classList.add("bg-red");
+    // } else if (e.type === "blur") {
+    //         e.target.classList.remove("bg-red");
+    //     }
+}
+
+const changeTitle = e => {
+    // document.querySelectorAll("h1")[2].textContent ="asd";
+    document.querySelectorAll("h1")[2].textContent = emailInput.value;
+
+}
+
+emailInput.addEventListener("keydown", inputListener);
+emailInput.addEventListener("keyup", changeTitle);
 
 
 
+const buttonContainer = document.getElementById("container");
+buttonContainer.addEventListener("mouseover", inputListener);
+buttonContainer.addEventListener("mouseout", inputListener);
 
+function coords (e) {
+    const h1 = document.querySelectorAll("h1")[3];
+    h1.textContent = `X: ${e.clientX} Y: ${e.clientY}`;
+}
+
+document.body.addEventListener("mousemove", coords);
 
 
 

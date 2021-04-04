@@ -12,7 +12,10 @@
    
 <!-- Pequeño CSS Interno para el ejercicio, normalmente va fuera. -->
 <style> 
-
+    
+    * {
+        box-sizing: border-box;
+    }
     a {
         font-size: 3em;
         display: block;
@@ -21,6 +24,7 @@
     .grandparent {
         height: 500px;
         background-color: brown;
+        box-sizing: border-box;
     }
 
     .parent {
@@ -38,9 +42,21 @@
         justify-content: center;
         gap: 25px;
         flex-grow: 1;
-        padding: 25px;
-        
+        padding: 25px; 
 
+    }
+
+    .bg-red {
+        background-color: red;
+    }
+
+    #container {
+        margin: 50px;
+        border: 3px solid gray;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -73,7 +89,23 @@
         </div>
     </div>
 
+    <h1>Eventos</h1>
+    <div id="container">
+        <button>Cambiar de color</button>
+    </div>
 
+    <br>
+
+    <label for="emailInput">Introduce tu email</label>
+    <input type="email" id="emailInput">
+
+    <br>
+
+    <h1>Coords</h1>
+
+    <div style="height: 1000px;"></div>
+
+    
 
 
     <script>
