@@ -5,7 +5,7 @@
 
 const parentDiv = document.getElementsByTagName("div")[0];
 
-let p = document.createElement("p");
+const p = document.createElement("p");
 const p2 = p.cloneNode()
 
 p.textContent = "Párrafo del Ejercicio 1 - 1";
@@ -30,7 +30,7 @@ colorButton.addEventListener("click", function (event){
 // Apartado 3 - Con 3 URL en el HTMl cada vez que se haga click en 1 se vea.
 
 
-const divImg = document.getElementsByClassName("img")
+const divImg = document.getElementsByTagName("img")[0];
 
 const listItems = document.getElementsByTagName("li");
 
