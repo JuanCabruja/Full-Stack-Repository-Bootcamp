@@ -38,5 +38,22 @@ let changeImage = event => divImg.src = event.target.textContent;
 
 listItems[0].addEventListener ("click", changeImage);
 listItems[1].addEventListener ("click", changeImage);
-listItems[2].addEventListener ("click", changeImage);
+listItems[2].addEventListener ("click", changeImage);// v2 - Autoría Juan Alberto
+const list = document.querySelector("ul");
+const image = document.querySelector("img");
 
+
+const changeImage = e => image.src = e.target.textContent;
+
+
+list.addEventListener("click", changeImage);
+
+// v2 - Autoría Juan Alberto
+const list = document.querySelector("ul");
+const image = document.querySelector("img");
+
+
+const changeImage = e => image.src = e.target.textContent;
+
+
+list.addEventListener("click", changeImage);

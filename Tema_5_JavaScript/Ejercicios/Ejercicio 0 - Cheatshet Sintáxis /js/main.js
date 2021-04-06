@@ -342,13 +342,17 @@ console.log(isPositive(-1));
 
 // Apartado 23 -- Crea una función que dado un array cuaqluiera y un índice, borre el elemento guardado en ese índice. 
 
+console.log("** Apartado 23 **"); 
 const removeItem = (array, index) => array.splice(index, 1)
 
 
 // Apartado 24 -- Usando la función del apartado anterior, crea otra función que dado un array de números y un número
 // a filtrar, devuelva un array borrando todos las participaciones de dicho número. 
 
+console.log("** Apartado 24 **"); 
+
 const filterItem = (array, numberToFilter) => {
+    //Paso por valor vs paso por referencia
     array.forEach((element, index) => {
 
         if (element === numberToFilter) {
@@ -363,3 +367,94 @@ let apartado24Array = [1, 5, 5, 7, 8, 3];
 console.log(apartado24Array);
 filterItem(apartado24Array, 5);
 console.log(apartado24Array);
+
+// Ejemplo para Object.entries()
+
+
+//Apartado 25 --
+
+console.log("** Apartado 25 **"); 
+
+function propiedadesArray(object) {
+    return Object.keys(clase);
+}
+
+const valoresArray = (object) => Object.values(object);
+
+let clase = {
+    profesor: "jesús",
+    alumnos: "20",
+    curso: "Bootcamp Fullstack Web Developer"
+}
+
+console.log(propiedadesArray(clase));
+console.log(valoresArray(clase));
+
+//Apartado 26 -- Una función que invierta un String. 
+console.log("** Apartado 26 **"); 
+
+function stringReverse (string) {
+    reversedString = "";
+    for (let i = string.length - 1; i >= 0; i--) {
+        reversedString += string[i];
+    }
+    return reversedString
+}
+
+
+console.log(numbersArray);
+console.log(stringReverse(numbersArray));
+
+function stringInvertido (texto) {
+    return texto.split("").reverse().join(""); //Separa y lo convierte en un Array (split), lo invierte con el método Reverse de los arrays y Join los reintegra en un string.
+}
+
+// document.write(stringInvertido(".nóicamargorp ed sedrat sal ne éfac led érasuba oN"))
+console.log(stringInvertido(".nóicamargorp ed sedrat sal ne éfac led érasuba oN"));
+
+// Apartado 27 -- Crea una función que compare strings sin tener en cuenta las mayúsculas / minúsculas. 
+
+console.log("** Apartado 27 **"); 
+
+const compareStrings = (str, str2) => {
+    if (str.toLocaleLowerCase() === str2.toLocaleLowerCase()) {
+        return true
+    }
+}
+
+console.log(compareStrings("hola", "HoLA"));
+
+// Apartado 28 -- Crea una función que convierta en mayúscula solo la primera letra de cada palabra de un string dado. El apartado 11 será de ayuda. Investiga cómo unir un array en un único string
+
+function capitalize (string) {
+
+    let words = string.split(" ");
+
+    for (i = 0 ; 1 < words.length ; i ++) {
+
+        const letters = words[i].split("");
+
+        //console.log(letters);
+
+        letters[0] = letters[0].toUpperCase();
+
+        // console.log(letters.join(""));
+
+        words[i] = letters.join("")
+
+        // console.log(words.join(" "))
+    }
+
+    return words.join(" ")
+}
+
+//Este me da error, algún error en la sintáxis tengo, esta semana tengo que rehacer los 30 ejercicios para practicar la sintaxis.
+
+console.log(capitalize("el veloz murciélago hindú comía feliz cardillo y kiwi."))
+
+// Apartado 29 -- Crea una función en una única línea que reciba un valor lógico y devuelva el opuesto.
+
+const negate = (logical) => !logical;
+
+console.log(negate(true));
+console.log(negate(false));

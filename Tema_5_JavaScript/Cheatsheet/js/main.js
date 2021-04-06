@@ -476,7 +476,7 @@ const colorButton = document.getElementsByTagName("button")[0];
 colorButton.addEventListener("click", function (event){
     console.log(event)
     console.log(event.target);
-    // document.body.style.backgroundColor = "green";
+// document.body.style.backgroundColor = "green";
     // document.body.classList.toggle("bg-red");
     console.log(event.target.tagName);
 
