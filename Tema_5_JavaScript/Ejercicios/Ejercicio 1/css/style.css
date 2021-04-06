@@ -1,6 +1,9 @@
 .bg-green {
-    background-color: green;
-    
+    background-color: green;   
+}
+
+.bg-red {
+    background-color:red;   
 }
 
 div {
@@ -15,3 +18,8 @@ div {
     background-position: center;
 }
 
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
