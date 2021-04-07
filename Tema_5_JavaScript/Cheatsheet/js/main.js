@@ -191,6 +191,58 @@ console.log(kid);
 kid.looseFriends();
 console.log(kid);
 
+
+//This
+
+//Object Constructor using functions
+
+//La sintáxis de un constructor u objeto es prácticamente idéntica a la función normal. 
+// se escribe tal cual una función entera, pero el nombre de la función empieza en maúscula
+//
+
+function Car(brand, color, weight, topSpeed) {
+    this.brand = brand;
+    this.color = color;
+    this.weight = weight;
+    this.topSpee = topSpeed;
+    this.getDescription = function () {
+        return `This ${this.color} ${this.brand} weights ${this.weight} and ` +
+        ` can reach up to ${this.topSpeed}`
+    }
+}
+
+
+let y = new Car("Mercedes");
+
+console.log(y);
+
+let y = new Car("Mercedes", "red", "1500kg", "300 Km/h");
+
+console.log(y);
+
+function Car(brand, color, weight, topSpeed) {
+    this.brand = brand;
+    this.color = color;
+    this.weight = weight;
+    this.topSpeed = topSpeed;
+    this.getDescription = function () {
+        return `This ${this.color} ${this.brand} weights ${this.weight} and ` +
+        ` can reach up to ${this.topSpeed} km/h`
+    }
+}
+
+// pre ES5, esta es la forma en la que se trabajaban antes los objetos, ahora el Visual Code
+// Nos sugiere convertirlo a una nueva clase, que es como suele hacerse en ECMAS15
+
+const car1 = new Car("Mercedes", "red", 2000, 200);
+const car2 = new Car("Volvo", "White", 2500, 180);
+const car3 = new Car("volkswagen", "blue", 1500, 175);
+
+console.log(car1.getDescription());
+console.log(car2.getDescription());
+console.log(car3.getDescription());
+
+
 //--------------- Condicionales
 
 const randomNumber = 9;

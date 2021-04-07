@@ -140,3 +140,148 @@ const colorReceiverParagraph = document.querySelector("#colorReceiverParagraph")
 selectChoicer.addEventListener("change", e => {
     colorReceiverParagraph.style.color = e.target.value;
 })
+
+
+// Apartado 10 --  Incluir un botón que al pulsarlo genere un número aleatorio y mantenga en una lista
+// actualiza el número de elementos que se han generado, los que son pares y los que son impares.
+
+  const numGeneratorBtn = document.querySelector("#numGeneratorBtn");
+  const evenOutput = document.querySelector(".evenOutput");
+  const unevenOutput = document.querySelector(".unevenOutput");
+  const counterOutput = document.querySelector(".counterOutput");
+  let counter = 0;
+  let lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//   numGeneratorBtn.addEventListener("click", () => {
+//       let x = lista.sort(function() {return Math.random() - 0.5})[0];
+//             //   console.log(x);
+//       if (x % 2 === 0) {
+//         evenOutput.textContent = evenOutput.textContent.concat(` ${x}.`)
+//       } else {
+//         unevenOutput.textContent = unevenOutput.textContent.concat((` ${x}.`));
+//       }
+//   });
+
+// He hecho el ejercicio de manera tal que se agrega en concatenado el valor, en clase 
+// se llenó un span dispuesto justo después de la palabra, por eso este código es bastante
+// Más largo.
+
+  numGeneratorBtn.addEventListener("click", () => {
+    let x = Math.floor(Math.random()*100);
+   
+    if (x % 2 === 0) {
+        evenOutput.textContent = evenOutput.textContent.concat(` ${x}.`)
+        counter++
+        counterOutput.textContent = `Contador Total: ${counter}.`;
+    } else {
+        unevenOutput.textContent = unevenOutput.textContent.concat((` ${x}.`));
+        counter++
+        counterOutput.textContent = `Contador Total: ${counter}.`;
+
+    }
+});
+
+
+  // Apartado 11 -- Construir una lista que tenga números. Añadir un input donde poder añadir números y un botón.
+  // Al pulsar el botón, si el número ya existe en la lista, mostrar un mensaje de error, si no existe, 
+  // lo añadirá al principio.
+
+  const numberTextInput = document.querySelector("#numberTextInput");
+  const numberInputBtn = document.querySelector(".numberInputBtn");
+  const listaEjercicio11 = document.getElementsByClassName("liEjercicio11");
+  const ulApt11 = document.querySelector("#ulApt11");
+
+  console.log(listaEjercicio11.length);
+  console.log(listaEjercicio11.value);
+
+
+
+    // function fillList ( {
+    //     ulApt11.innerHTML = "";
+    // })
+
+
+  
+//   numberInputBtn.addEventListener("click", () => {
+//       for (let i = 0; i <= listaEjercicio11.length; i++) {
+//           if (numberTextInput.value == listaEjercicio11.value[i]) 
+//       }
+//   })
+
+
+// Método de María 
+
+const ul_2 = document.getElementById("ul-2");
+const input_4 = document.getElementById("input-4");
+const button_11 = document.getElementById("button-6");
+ 
+const myArray = [];
+ 
+function addNumber() {
+    const num = input_4.value;
+    if (myArray.includes(num)) {
+        alert("error");
+    } else {
+        const li = document.createElement("li");
+        ul_2.prepend(li);
+        li.textContent = num;
+        myArray.push(num);
+    }
+}
+ 
+button_11.addEventListener("click", addNumber);
+
+
+// Apartado 12 -- Literalmente la forma en la que hice el apartado 2 con el Toggle. 
+
+
+
+// Apartado Extra: Refactorizar Código. 
+
+const buttons = document.getElementsByClassName('btnAptExtra');
+
+
+
+// buttons[0].addEventListener('click', () => {
+
+//     buttons[0].style.backgroundColor = "red";
+
+// });
+
+
+
+// buttons[1].addEventListener('click', () => {
+
+//     buttons[1].style.backgroundColor = "red";
+
+// });
+
+
+
+// buttons[2].addEventListener('click', () => {
+
+//     buttons[2].style.backgroundColor = "red";
+
+// });
+
+// Solución 1. 
+
+// const buttonsArray = Array.from(buttons);
+
+// buttonsArray.forEach(button => {
+//     button.addEventListener("click", (e) => {
+
+//         e.target.style.backgroundColor = "red";
+
+//     })
+// });
+
+// Solución 2.
+const buttons1 = document.querySelectorAll(".btnAptExtra");
+buttons1.forEach(button => {
+    button.addEventListener("click", (e) => {
+
+        e.target.style.backgroundColor = "red";
+
+    })
+});
