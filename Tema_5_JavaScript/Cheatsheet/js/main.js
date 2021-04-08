@@ -212,9 +212,6 @@ function Car(brand, color, weight, topSpeed) {
 }
 
 
-let y = new Car("Mercedes");
-
-console.log(y);
 
 let y = new Car("Mercedes", "red", "1500kg", "300 Km/h");
 
@@ -582,6 +579,117 @@ function coords (e) {
 document.body.addEventListener("mousemove", coords);
 
 
+// Funciones de Alto Nivel // Higher Order Functions
+
+// Aspectos Avanzados
+// Funciones sort, map, filter
+
+console.clear();
+// -------------------  Map
+
+// HAcer el map si no existiese.
+
+let arr1 = [1, 2, 3];
+let arr2 = [];
+
+for (let num of arr1) {
+    arr2.push (num * 2);
+}
+
+console.log(arr1, arr2);
+
+//-- con Map
+arr1 = [1, 2, 3];
+arr2 = arr1.map(function (num) {
+    return num * 2;
+})
+
+//-- o
+
+arr2 = arr1.map(num => num * 2);
+
+let arr3 = arr1.map(num => num % 2 === 0 ? num : num + 1);
+
+console.log(arr1, arr2, arr3);
+
+//A partir de un array con años de nacimiento calcular edades. 
+
+const birthDate = [1995, 1990, 1985, 1980, 1975];
+const userAge = birthDate.map( age => 2021 - age);
+console.log(userAge);
+
+// ------------------------ filter
+
+// Nos permite filtrar los valores de un array, de forma bastante rápida y corta
+
+//Sin filter sería así.
+
+const prices = [150, 50, 49, 51, 15, 237];
+const expensivePrices = [];
+
+// for (let price of prices) {
+//     if (price >= 50){
+//         expensivePrices.push(price);
+//     }
+//  }
+
+//  console.log(expensivePrices);
+
+ // con Filter.
+
+let expensivePrices2 = prices.filter( price => price>= 50);
+console.log(prices, expensivePrices2);
 
 
+// Con este ejemplo podemos ver lo fácil que es filtrar un array
+// con el método filter
 
+const cars = [
+    {
+        brand: "BMW",
+        year: 1990,
+        plateNumber: "HGJ1282"
+    },
+    {
+        brand: "Mercedes",
+        year: 2010,
+        plateNumber: "BXG2282"
+    },
+    {
+        brand: "Toyota",
+        year: 2021,
+        plateNumber: "JLY3382"
+    }
+]
+
+//Aquí podemos ver como filtar tanto como map funcionan con booleanos
+//Esto nos permite hacer combinaciones internas como por jeemplo
+console.log(cars.filter(car => car.year > 2008 && car.brand.includes("T")));
+
+
+//------------------- .sort
+//Nos sirve para ordenar un array de números
+//Sin sort, tendríamos que aplicar métodos de ordenación como el Método Burbuja
+
+//Con la función .sort podemos ordenar la mayoría de arrays en una sola línea.
+
+
+const arrsort1 = [10, 7, 20, 13];
+console.log(arrsort1);
+
+arrsort1.sort(function (num1, num2) {
+    if (num1 > num2){
+        return 1;
+    } else if ( num1 < num2) {
+        return -1;
+    }
+})
+
+console.log(arrsort1);
+
+// --------------- Reduce 
+// Lo utilizamos para acumular un array
+
+const arr = [16, 7, 13, 20];
+
+console.log(arr.reduce((sum, currentNumber) => sum + currentNumber, 100));

@@ -7,9 +7,9 @@ function User(name, firstLastName, secondLastName, email, age, city, nProducts) 
     this.firstLastName = firstLastName;
     this.secondLastName = secondLastName;
     this.email = email;
-    this.age =  age,
+    this.age =  age;
     this.city = city;
-    this.nProducts = nProducts;
+    this.nProducts = 0;
     this.augmentProducts= function () {
         return this.nProducts++
     }
@@ -44,6 +44,31 @@ users.forEach((user) => {
     select.appendChild(option);
   
 })
+
+// Rellenamois la lista con la info de un usuario
+
+function fillList(user) {
+    list.innerHTML = "";
+
+    for (const propertyName in user) {
+        const value = user[propertyName];
+
+        if (typeof value !== 'function' {
+            const newListItem = document.createElement("li");
+            newListItem.innerHTML = `${propertyName}: ${value}`;
+            newListItem.classList.add("list-group-item");
+            list.appendChild(newListItem)
+        })
+
+    }
+}
+
+// Estado Inicial
+
+//Hay que investigar en casa el For in y el Change
+//Revisar clases y darle duro a este tema porque es importante. 
+
+
 
 // const parentDiv = document.getElementsByTagName("div")[0];
 

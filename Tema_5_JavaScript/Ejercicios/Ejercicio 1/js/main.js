@@ -49,6 +49,7 @@ colorButton.addEventListener("click", function (event){
 // list.addEventListener("click", changeImage);
 
 // v2 - Autoría Juan Alberto
+
 const list = document.querySelector("ul");
 const image = document.querySelector("img");
 
@@ -166,20 +167,20 @@ selectChoicer.addEventListener("change", e => {
 // se llenó un span dispuesto justo después de la palabra, por eso este código es bastante
 // Más largo.
 
-  numGeneratorBtn.addEventListener("click", () => {
-    let x = Math.floor(Math.random()*100);
-   
-    if (x % 2 === 0) {
-        evenOutput.textContent = evenOutput.textContent.concat(` ${x}.`)
-        counter++
-        counterOutput.textContent = `Contador Total: ${counter}.`;
-    } else {
-        unevenOutput.textContent = unevenOutput.textContent.concat((` ${x}.`));
-        counter++
-        counterOutput.textContent = `Contador Total: ${counter}.`;
+    numGeneratorBtn.addEventListener("click", () => {
+        let x = Math.floor(Math.random()*100);
+    
+        if (x % 2 === 0) {
+            evenOutput.textContent = evenOutput.textContent.concat(` ${x}.`)
+            counter++
+            counterOutput.textContent = `Contador Total: ${counter}.`;
+        } else {
+            unevenOutput.textContent = unevenOutput.textContent.concat((` ${x}.`));
+            counter++
+            counterOutput.textContent = `Contador Total: ${counter}.`;
 
-    }
-});
+        }
+    });
 
 
   // Apartado 11 -- Construir una lista que tenga números. Añadir un input donde poder añadir números y un botón.
