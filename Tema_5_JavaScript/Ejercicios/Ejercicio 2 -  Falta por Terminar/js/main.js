@@ -1,7 +1,9 @@
 // Ejercicio 2 - Trataremos un Array de Usuarios y una lista interactiva que cambie su disposición
 // segun el usuario seleccionado, creamos una Función de Constructora.
-
+// SESIÓN 42
 // Constructor
+
+
 function User(name, firstLastName, secondLastName, email, age, city, nProducts) {
     this.name = name;
     this.firstLastName = firstLastName;
@@ -53,12 +55,12 @@ function fillList(user) {
     for (const propertyName in user) {
         const value = user[propertyName];
 
-        if (typeof value !== 'function' {
+        if (typeof value !== 'function') {
             const newListItem = document.createElement("li");
             newListItem.innerHTML = `${propertyName}: ${value}`;
             newListItem.classList.add("list-group-item");
             list.appendChild(newListItem)
-        })
+        }
 
     }
 }
