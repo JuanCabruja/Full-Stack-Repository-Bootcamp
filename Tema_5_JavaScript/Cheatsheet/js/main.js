@@ -702,3 +702,26 @@ console.log(arrsort1);
 const arr = [16, 7, 13, 20];
 
 console.log(arr.reduce((sum, currentNumber) => sum + currentNumber, 100));
+
+
+
+// Comentarios sobre Arrays 
+
+// - Cuando queramos iterar arrays
+// for of
+// forEach
+
+
+
+// - Cuando no sepamos la cantidad de iteraciones
+// while
+
+
+
+// - Cuando queramos iterar propiedades de un objeto
+// for in
+
+
+
+// - Cuando ninguno de los anteriores nos valga
+// for común (for i = 0; i < max; i++)
