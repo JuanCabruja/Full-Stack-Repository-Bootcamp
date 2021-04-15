@@ -725,3 +725,8 @@ console.log(arr.reduce((sum, currentNumber) => sum + currentNumber, 100));
 
 // - Cuando ninguno de los anteriores nos valga
 // for común (for i = 0; i < max; i++)
+
+
+
+// -------------------------- JSON -----------------------
+
