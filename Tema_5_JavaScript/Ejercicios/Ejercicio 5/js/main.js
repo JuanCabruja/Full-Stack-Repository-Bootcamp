@@ -115,7 +115,8 @@ priceHeader.addEventListener("click", e => {
 addBookButton.addEventListener("click", e => {
     e.preventDefault();
     
-    const newID = books[books.length-1].id + 1;
+    const lastIndex = books.length-1;
+    const newID = books[lastIndex].id + 1;
 
    const newBook = new Book(
             newID,
