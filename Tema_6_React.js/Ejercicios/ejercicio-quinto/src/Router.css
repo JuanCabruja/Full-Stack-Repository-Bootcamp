@@ -1,0 +1,3 @@
+nav .active, nav .active:hover, nav .active:active, nav .active:visited {
+    color: blue !important;
+}
