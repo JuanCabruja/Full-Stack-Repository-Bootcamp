@@ -1,12 +1,13 @@
-import {useState, useEffect } from 'react';
 import ToDoList from '../components/ToDoList'
 import InputList from '../components/InputList'
 import 'bootstrap/dist/css/bootstrap.css'
-import { useFetch } from "../Hooks/useFetch";
+import {useState} from 'react';
+import {useFetch} from '../Hooks/useFetch'
+
+
+
 
 function Ejercicio4() {
-
-
 
 
 // useEffect(() => {
@@ -23,11 +24,7 @@ function Ejercicio4() {
 
 const [toDos, setToDos] = useState([]);
 
-
-
 const API_TODOS = "https://jsonplaceholder.typicode.com/todos";
-
-//Hook personalizado
 
 useFetch(API_TODOS, setToDos);
 
@@ -35,8 +32,8 @@ useFetch(API_TODOS, setToDos);
   return (
     <div className="App">
       <h2>ToDo List</h2>
-       <InputList toDos={toDos} setToDos={setToDos}/>
-       <ToDoList  toDos={toDos} setToDos={setToDos}/>
+       <InputList />
+       <ToDoList  />
       
     </div>
   );

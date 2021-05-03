@@ -1,7 +1,11 @@
 import react from 'react'
 import { useState } from 'react';
+import {useContext} from 'react';
+import {GlobalContext} from '../Router';
 
-export default function ContactList({contacts, setContacts}) {
+export default function ContactList() {
+
+    const {contacts, setContacts} = useContext(GlobalContext);
 
     function erase (e) {
         
@@ -11,6 +15,7 @@ export default function ContactList({contacts, setContacts}) {
 
     }
 
+    
     return (
         <div className="row">
     

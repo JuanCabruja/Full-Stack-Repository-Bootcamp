@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState } from 'react'
+import { GlobalContext } from '../Router';
 
-export default function InputList({ setToDos }) {
+export default function InputList() {
 
+    const { setToDos } = useContext(GlobalContext)
     const [newTodo, setNewToDo] = useState("")
 
     function handleSubmit(e) {

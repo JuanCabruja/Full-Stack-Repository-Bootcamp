@@ -1,7 +1,9 @@
 import react from 'react'
 import { useState } from 'react';
+import {useContext} from 'react';
+import {GlobalContext} from '../Router';
 
-export default function NewFormContact( {setContacts}) {
+export default function NewFormContact( ) {
 
     // const [Nombre, setNombre] = useState("");
     // const [Apellidos, setApellidos] = useState("");
@@ -33,6 +35,8 @@ export default function NewFormContact( {setContacts}) {
     // function handleTeléfono (e) {
     //     setTeléfono(e.target.value);
     // };
+
+    const {setContacts} = useContext(GlobalContext);
 
     function handleInput (e) {
         const inputName = e.target.id;

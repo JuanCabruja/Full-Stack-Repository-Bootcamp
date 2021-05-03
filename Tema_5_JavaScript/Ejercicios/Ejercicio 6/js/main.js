@@ -1,82 +1,73 @@
 
-// Selectores & Variables
 
-const ulId = document.querySelector("#ulId");
-const divEjercicio2 = document.getElementById("divEjercicio2");
+// ----------------- Constantes
+const URL = "https://jsonplaceholder.typicode.com/posts";
+const pageSize = 20;
+let pageNumber = 2;
 
-const URL1 = "https://jsonplaceholder.typicode.com/comments";
-const URL2 = "https://jsonplaceholder.typicode.com/posts";
-
-let promise = fetch(URL1);
-let promise2 = fetch(URL2);
-
-console.log(divEjercicio2);
-console.log(1);
+let promise = fetch(URL);
 promise.then(response => console.log(response));
 
+// ----------------- Selectors
 
-function printLi(array) {
-    array.slice(0, 20).forEach(user => {
-        
-        let li = document.createElement("li");
-        ulId.appendChild(li);
-        li.textContent = user.id; 
-        
-        
+const postDiv = document.querySelector("#posts");
+document.querySelectorAll(".previousPage").forEach(button => button.addEventListener("click", changePage));
+document.querySelectorAll(".nextPage").forEach(button => button.addEventListener("click", changePage));
 
-    })
-};
+console.log(postDiv);
+// console.log(previousPageButton);
 
-function printContent(array) {
-    array.slice(0, 20).forEach(user => {
-        
+// ----------------- Functionality
+
+function changePage (event) {
+    if (event.target.className === "previousPage" && pageNumber > 1) {
+        pageNumber--;
+    } else if (event.target.className === "nextPage" && pageNumber < posts.length / pageSize){
+        pageNumber++;
+    }
+    printContent();
+}
+
+function printContent() {
+    const newPagePosts = paginate(posts, pageSize, pageNumber)
+    postDiv.innerHTML = "";
+    return newPagePosts.forEach(post => {
+
         let h2 = document.createElement("h2");
-        divEjercicio2.appendChild(h2);
-        h2.textContent = user.title; 
+        postDiv.appendChild(h2);
+        h2.textContent = post.title;
 
         let p = document.createElement("p");
-        divEjercicio2.appendChild(p);
-        p.textContent = user.body;
-    
+        postDiv.appendChild(p);
+        p.textContent = post.body;
+
     })
 }
 
-console.log("*********");
+function paginate(array, page_size, page_number) {
+    // human-readable page numbers usually start with 1, so we reduce 1 in the first argument
+    // fuente: https://stackoverflow.com/questions/42761068/paginate-javascript-array
+    return array.slice((page_number - 1) * page_size, page_number * page_size);
+}
 
-fetch(URL1)
+
+
+// ----------------- Fetch
+
+fetch(URL)
     .then(response => {
         if (!response.ok) {
             throw Error("Hay algún problema con la respuesta: " + response.statusText);
-            
+
         }
         return response.json();
     })
     // Aquí proceso los datos.
     .then(data => {
-        printLi(data);
-        
-    }).catch(error => {})
-;
+        posts = [...data];
+        printContent(data, pageSize, pageNumber);
 
-fetch(URL2)
-    .then(response => {
-        if (!response.ok) {
-            throw Error("Hay algún problema con la respuesta: " + response.statusText);
-            
-        }
-        return response.json();
-    })
-    // Aquí proceso los datos.
-    .then(data => {
-        printContent(data);
-        
-    }).catch(error => {})
-;
+    }).catch(error => { })
+    ;
 
-// Nos sirve para el ejercicio, crear una función que se llame paginar
-// Que dado un array, un número de página y un tamaño de página
-// Y que lo que haga es que a partir de ese array darte los elementos
-// que necesitamos, puede haber un problema de intentar hacer algo
-// Cuando todavía no se tienen los datos.
 
-// 

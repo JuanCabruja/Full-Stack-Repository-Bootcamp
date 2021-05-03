@@ -10,6 +10,4 @@ fetch(url)
 }, []);
 }
 
-
-
 export {useFetch};

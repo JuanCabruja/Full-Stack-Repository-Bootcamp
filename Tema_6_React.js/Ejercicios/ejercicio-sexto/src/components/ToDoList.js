@@ -2,7 +2,12 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import './ToDoList.css'
 
-export default function ToDoList({toDos, setToDos}) {
+import {useContext} from 'react';
+import {GlobalContext} from '../Router';
+
+export default function ToDoList( ) {
+
+    const {toDos, setToDos} = useContext(GlobalContext);
 
     const removeToDo = title => setToDos(toDos.filter(todo => todo.title !== title))
 
@@ -43,6 +48,7 @@ export default function ToDoList({toDos, setToDos}) {
 
                                 <button className="btn btn-danger" onClick={() => removeToDo(ToDo.title)} id={ToDo.userID}>X</button>
 
+                            f
                             </li>  
                         
                         </>
