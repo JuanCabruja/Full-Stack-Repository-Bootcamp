@@ -1,0 +1,17 @@
+{
+  "name": "ejercicio-1",
+  "version": "1.0.0",
+  "description": "Ejercicio 1 API REST SERVER",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Juan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

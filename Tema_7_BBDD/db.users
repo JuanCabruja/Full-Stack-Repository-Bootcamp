@@ -1,0 +1,87 @@
+// Ejercicio 2
+
+use chat
+
+// new Date(2021, 4, 15, 20, 25, 05)
+
+db.users.insertMany([
+    {
+        username: 'Random',
+        email: 'random@gmail.com',
+        password: '123123',
+        birthdate: new Date(2001, 1, 15),
+        lastLogin: new Date(2021, 4, 15, 20, 25),
+        status: {
+            online: false,
+            available: false
+        },
+        contacts: []
+    }, {
+        username: 'Otro',
+        email: 'otro@gmail.com',
+        password: '123123',
+        birthdate: new Date(2005, 2, 10),
+        lastLogin: new Date(2021, 5, 11, 10, 25),
+        status: {
+            online: true,
+            available: true
+        },
+        contacts: []
+    },{
+        username: 'Alguno',
+        email: 'alguno@gmail.com',
+        password: '123123',
+        birthdate: new Date(2002, 2, 22),
+        lastLogin: new Date(2021, 4, 21, 22, 25),
+        status: {
+            online: true,
+            available: false
+        },
+        contacts: []
+    },{
+        username: 'Este',
+        email: 'este@gmail.com',
+        password: '123123',
+        birthdate: new Date(2000, 9, 5),
+        lastLogin: new Date(2021, 5, 11, 21, 30),
+        status: {
+            online: false,
+            available: false
+        },
+        contacts: []
+    },
+    
+]);
+
+const users = db.users.find().toArray();
+
+db.users.update({_id: users[0]._id}, {$set: {contacts: [users[1]._id, users[2]._id, users[3]]}})
+
+db.users.update({_id: users[1]._id}, {$set: {contacts: [users[0]._id, users[2]._id]}})
+
+db.users.update({_id: users[2]._id}, {$set: {contacts: [users[0]._id, users[1]._id]}})
+
+db.users.update({_id: users[3]._id}, {$set: {contacts: [users[0]._id]}})
+
+db.chats.insertMany([
+    {
+        members: [users[0]._id, users[1]._id, users[2]._id],
+        messages: [
+            {from: users[0]._id, body: 'Hola, ¿vamos a la playa?', createAt: new Date(2021, 4, 8, 17, 30, 15)},
+            {from: users[1]._id, body: 'Vale', createAt: new Date(2021, 4, 8, 17, 31, 15)},
+            {from: users[2]._id, body: 'Me uno', createAt: new Date(2021, 4, 8, 17, 31, 50)},
+        ]
+    }, {
+        members: [users[0]._id, users[3]._id],
+        messages: [
+            {from: users[0]._id, body: '¿Tienes el ejercicio 7 de React hecho?', createAt: new Date(2021, 4, 8, 17, 30, 15)},
+            {from: users[3]._id, body: 'Jaja................', createAt: new Date(2021, 4, 8, 17, 31, 15)},
+            {from: users[0]._id, body: 'Jajaja.................', createAt: new Date(2021, 4, 8, 17, 31, 50)},
+        ]
+    },
+])
+
+db.users.find({'status.online': true, 'status.available': true}).pretty()
+db.users.update({}, {$set {'status.online': true, lastLogin: new Date(2021, 5, 11, 11, 36)}})
+
+db.users.update({}, {$set: {'status.online': true, lastLogin: new Date()}}, {multi: true})
