@@ -56,9 +56,6 @@ export default function Router() {
                 <Footer />
 
             </BrowserRouter>
-
-            
-
         </div>
     )
 }
